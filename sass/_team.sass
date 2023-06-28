@@ -1,0 +1,447 @@
+.team
+    padding-top: 225px
+    position: relative
+    overflow: hidden
+    &::before
+        content: ""
+        display: block
+        position: absolute
+        width: 835px
+        height: 835px
+        left: 50%
+        margin-left: -417px
+        top: -147px
+        z-index: -1
+        background: radial-gradient(50% 50% at 50% 50%, #A6EDF8 0%, rgba(157, 242, 255, 0) 100%)
+    &::after
+        content: ""
+        display: block
+        position: absolute
+        width: 1100px
+        height: 1100px
+        right: 0
+        margin-left: -117px
+        top: 210px
+        z-index: -2
+        background: radial-gradient(50% 50% at 50% 50%, #B3E8E5 0%, rgba(157, 242, 255, 0.0104167) 99.99%, rgba(197, 254, 251, 0) 100%)
+    &__title
+        padding-left: 154px
+        font-weight: 700
+        font-size: 32px
+        line-height: 38px
+        text-transform: uppercase
+        color: #13181E
+        position: relative
+        margin: 0
+        margin-bottom: 80px
+        span
+            position: absolute
+            font-weight: 700
+            font-size: 260px
+            line-height: 259px
+            text-transform: uppercase
+            color: #FFFFFF
+            opacity: 0.8
+            backdrop-filter: blur(25px)
+            top: 50%
+            left: 328px
+            z-index: -1
+            margin-top: -130px
+    &__descr
+        margin-bottom: 83px
+        font-weight: 300
+        font-size: 14px
+        line-height: 22px
+        color: #000000
+        padding-left: 154px
+        margin-top: 0
+        position: relative
+        padding-right: 36px
+        &::before
+            content: ""
+            display: block
+            width: 96px
+            height: 1px
+            background: #86CAC5
+            position: absolute
+            left: 40px
+            top: 11px
+    &__wrap
+        padding: 0 40px
+        padding-bottom: 160px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 70px 28px
+        position: relative
+    &__left
+        position: absolute
+        left: 0
+        top: 70px
+        font-weight: 300
+        font-size: 12px
+        line-height: 12px
+        color: #000000
+        transform-origin: 0% 0%
+        transform: rotate(-90deg)
+    &__img
+        width: 100%
+        height: 576px
+        margin-bottom: 30px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__name
+        font-weight: 550
+        font-size: 14px
+        line-height: 22px
+        margin-bottom: 12px
+        text-transform: uppercase
+        color: #000000
+    &__work
+        font-weight: 300
+        font-size: 14px
+        line-height: 22px
+        color: #000000
+    &__block
+        text-decoration: none
+    &-vac
+        &__name
+            font-weight: 300
+            font-size: 14px
+            line-height: 22px
+            text-transform: uppercase
+            color: #000000
+            margin-bottom: 12px
+        &__work
+            display: flex
+            align-items: center
+            grid-gap: 8px
+            font-weight: 550
+            font-size: 16px
+            line-height: 16px
+            color: #000000
+            transition: all 0.3s
+            &:hover
+                grid-gap: 20px
+.vac
+    &::after
+        width: 835px
+        height: 835px
+        top: 180px
+        margin-left: 0
+        right: -286px
+        z-index: -2
+        background: radial-gradient(50% 50% at 50% 50%, #A6EDF8 0%, rgba(157, 242, 255, 0) 100%)
+    &-top
+        &__wrap
+            display: flex
+            justify-content: space-between
+            position: relative
+            padding-right: 36px
+            margin-bottom: 63px
+        &__cont
+            width: calc(100% - 566px)
+            padding-right: 57px
+            padding-top: 98px
+            padding-left: 36px
+        &__descr
+            padding-left: 92px
+            margin-bottom: 46px
+            p
+                border-left: 2px solid #86CAC5
+                margin: 0
+                padding-left: 24px
+                font-size: 14px
+                line-height: 22px
+        &__text
+            p
+                font-weight: 300
+                font-size: 14px
+                line-height: 22px
+                margin-top: 0
+        &__img
+            width: 566px
+            height: 490px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+    &-main
+        padding-left: 154px
+        padding-right: 36px
+        display: flex
+        align-items: flex-end
+        margin-bottom: 53px
+        &__cont
+            width: calc(100% - 566px)
+        &__right
+            width: 566px
+            font-weight: 550
+            font-size: 18px
+            line-height: 30px
+            text-transform: uppercase
+            span
+                color: #6FB5B3
+        &__title
+            margin-top: 0
+            margin-bottom: 34px
+            font-weight: 700
+            font-size: 18px
+            line-height: 18px
+        &__descr
+            font-weight: 300
+            font-size: 14px
+            line-height: 22px
+            margin: 0
+            margin-bottom: 34px
+            position: relative
+            color: #000000
+            &::before
+                content: ""
+                width: 96px
+                height: 1px
+                display: block
+                background: #86CAC5
+                position: absolute
+                top: 11px
+                left: -118px
+        &__list
+            margin: 0
+            padding: 0
+            list-style-type: none
+            li
+                font-weight: 300
+                font-size: 14px
+                line-height: 18px
+                margin-bottom: 18px
+                padding-left: 25px
+                color: #000000
+                position: relative
+                &::before
+                    content: ""
+                    display: block
+                    width: 4px
+                    height: 4px
+                    border-radius: 50%
+                    background: #86CAC5
+                    position: absolute
+                    left: 0
+                    top: 8px
+    &-sec
+        padding-left: 154px
+        padding-right: 36px
+        display: flex
+        align-items: center
+        margin-bottom: 63px
+        position: relative
+        &::after
+            content: ""
+            display: block
+            width: 1100px
+            height: 1100px
+            background: radial-gradient(50% 50% at 50% 50%, #B3E8E5 0%, rgba(157, 242, 255, 0.0104167) 99.99%, rgba(197, 254, 251, 0) 100%)
+            position: absolute
+            top: -488px
+            right: -650px
+            z-index: -2
+        &__cont
+            width: calc(100% - 566px)
+            padding-right: 66px
+    &-end
+        padding-left: 154px
+        padding-right: 36px
+        display: flex
+        align-items: flex-start
+        padding-bottom: 150px
+        position: relative
+        &::after
+            content: ""
+            display: block
+            width: 728px
+            height: 728px
+            background: radial-gradient(50% 50% at 50% 50%, #CCF2F8 0%, rgba(164, 243, 255, 0) 100%)
+            position: absolute
+            top: -64px
+            left: -460px
+            z-index: -2
+        &__cont
+            width: calc(100% - 566px)
+            padding-right: 66px
+        &__right
+            text-align: right
+            width: 566px
+            font-weight: 550
+            font-size: 18px
+            line-height: 30px
+            text-transform: uppercase
+            span
+                display: block
+                color: #6FB5B3
+    &__btn
+        margin: 50px 0
+    &__share
+        display: flex
+        align-items: center
+        grid-gap: 11px
+        font-weight: 550
+        font-size: 18px
+        line-height: 22px
+        text-transform: uppercase
+        color: #000000
+        margin-right: -200px
+@media(max-width: 1329px)
+    .vac
+        &-top
+            &__img
+                width: 500px
+        &-end, &-main
+            &__right
+                width: 500px
+        &-top, &-main, &-sec, &-end
+            &__cont
+                width: calc(100% - 500px)
+@media(max-width: 1199px)
+    .team
+        &__img
+            height: 450px
+    .vac
+        &-top__descr
+            padding-left: 0
+        &-top, &-main, &-sec, &-end
+            padding-left: 0
+            padding-right: 0
+@media(max-width: 991px)
+    .team
+        &__wrap
+            grid-template-columns: repeat(2, 1fr)
+        &__title
+            padding-left: 110px
+            span
+                left: 280px
+        &__descr
+            padding-left: 110px
+            &::before
+                width: 50px
+    .vac
+        &-top__wrap, &-main, &-sec
+            flex-direction: column
+            grid-gap: 40px
+        &-top__img
+            width: 100%
+        &-end
+            flex-direction: column-reverse
+            grid-gap: 40px
+        &-top, &-main, &-sec, &-end
+            &__cont, &__right
+                text-align: left
+                width: 100%
+@media(max-width: 767px)
+    .team
+        &__wrap
+            padding: 0
+            padding-bottom: 110px
+        &__left
+            top: auto
+            bottom: calc(100% + 20px)
+    .vac
+        &-sec, &-end
+            &::after
+                display: none
+@media(max-width: 575px)
+    .team
+        padding-top: 115px
+        &::after
+            display: none
+        &::before
+            width: 454px
+            height: 454px
+            left: auto
+            right: 30px
+            top: -22px
+        &__wrap
+            grid-template-columns: repeat(1, 1fr)
+            grid-gap: 36px
+        &__img
+            height: 510px
+        &__title
+            padding-left: 85px
+            margin-bottom: 132px
+            font-size: 21px
+            line-height: 27px
+            span
+                font-size: 78px
+                line-height: 78px
+                left: 25px
+                top: 82px
+                margin-top: 0
+        &__descr
+            padding-left: 85px
+            margin-bottom: 67px
+            font-size: 14px
+            line-height: 20px
+            padding-right: 0
+            &::before
+                left: 25px
+                width: 45px
+                top: 10px
+    .vac
+        &-top
+            &__wrap
+                padding-right: 0
+                grid-gap: 0
+                margin-bottom: 40px
+                .team__left
+                    bottom: calc(100% - 131px)
+            &__cont
+                padding-top: 0
+                padding-right: 0
+                padding-left: 25px
+            &__descr
+                padding-left: 25px
+                margin-bottom: 34px
+                p
+                    padding-left: 31px
+            &__text
+                margin-bottom: 29px
+            &__img
+                height: 280px
+                margin-left: -15px
+                margin-right: -15px
+                width: calc(100% + 30px)
+        &-main
+            grid-gap: 0
+            margin-bottom: 40px
+            &__cont
+                padding-left: 82px
+            &__title
+                margin-bottom: 29px
+            &__descr
+                margin-bottom: 23px
+                &::before
+                    left: -83px
+                    width: 70px
+            &__list
+                margin-bottom: 29px
+        &-sec
+            grid-gap: 0
+            margin-bottom: 31px
+            &__cont
+                padding-left: 82px
+                padding-right: 25px
+        &-end
+            padding-bottom: 120px
+            grid-gap: 0px
+            &__cont
+                padding-left: 82px
+                padding-right: 0
+            &__right
+                margin-bottom: 29px
+        &__btn, &__share
+            margin-left: -82px
+        &__btn
+            margin-top: 34px
+            margin-bottom: 39px
+        &__share
+            margin-right: 0
+            flex-wrap: wrap

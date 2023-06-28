@@ -1,0 +1,241 @@
+.des
+    &__dec
+        top: 320px
+    &-top
+        &__wrap
+            margin-bottom: 120px
+        &__img
+            cursor: pointer
+            &::after
+                content: ""
+                display: block
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                background: rgba(19, 24, 30, 0.05) url('../img/servin1-down.svg') center no-repeat
+                box-shadow: 0px 80px 65px 0px rgba(53, 64, 77, 0.30) inset, 0px 1px 40px 0px rgba(163, 168, 183, 0.20) inset, 0px 4px 16px 0px rgba(0, 178, 168, 0.10) inset
+                backdrop-filter: blur(20px)
+                transition: all 0.3s
+                opacity: 0
+            span
+                position: absolute
+                top: calc(50% + 58px)
+                left: 0
+                width: 100%
+                padding: 0 30px
+                font-weight: 550
+                line-height: 22px
+                text-transform: uppercase
+                font-size: 14px
+                z-index: 3
+                color: #fff
+                text-align: center
+                transition: all 0.3s
+                opacity: 0
+            &:hover
+                span, &::after
+                    opacity: 1
+            a
+                position: absolute
+                color: #000
+                text-align: right
+                font-size: 16px
+                text-decoration: none
+                font-weight: 550
+                bottom: -50px
+                display: flex
+                align-items: center
+                grid-gap: 8px
+                right: 0
+                img
+                    width: 12px
+    &__title
+        margin: 0
+        margin-bottom: 74px
+        color: #000
+        font-size: 18px
+        font-weight: 550
+        line-height: 30px
+        padding-left: 34px
+        text-transform: uppercase
+        span
+            color: #6FB5B3
+    &__wrap
+        padding-bottom: 60px
+    &__block
+        display: flex
+        justify-content: space-between
+        margin-bottom: 90px
+        &:nth-child(2n)
+            flex-direction: row-reverse
+            .des
+                &__img::after
+                    left: -37px
+                &__icon
+                    left: auto
+                    right: -35px
+                &__cont
+                    align-items: flex-end
+                    text-align: right
+    &__img
+        width: calc(50% - 36px)
+        height: 600px
+        position: relative
+        z-index: 3
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &::after
+            content: ""
+            display: block
+            width: 1px
+            height: calc(100% + 90px)
+            background-color: #D9D9D9
+            position: absolute
+            right: -36px
+            top: 0
+    &__icon
+        background: #00B2A8
+        width: 66px
+        color: #FFF
+        text-align: center
+        font-size: 36px
+        line-height: 36px
+        font-weight: 550
+        padding: 15px 0
+        position: absolute
+        top: 0
+        left: -36px
+        z-index: 3
+    &__cont
+        width: calc(50% - 35px)
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+    &__name
+        color: #000
+        font-size: 18px
+        font-weight: 500
+        line-height: 22px
+        text-transform: uppercase
+        margin-bottom: 24px
+        max-width: 370px
+        position: relative
+        z-index: 3
+    &__descr
+        color: #000
+        font-size: 14px
+        font-weight: 300
+        line-height: 22px
+        max-width: 370px
+        position: relative
+        z-index: 3
+    &__block
+        position: relative
+        &:last-child .des__img::after
+            display: none
+        &:nth-child(1)
+            .des__cloud
+                position: absolute
+                z-index: 2
+                bottom: -230px
+                left: -36px
+            &::before
+                content: ""
+                display: block
+                width: 700px
+                height: 700px
+                border-radius: 705px
+                background: radial-gradient(50% 50.00% at 50% 50.00%, #A6EDF8 0%, rgba(157, 242, 255, 0.00) 100%)
+                position: absolute
+                top: 57px
+                right: -170px
+        &:nth-child(2)
+            .des__cloud
+                position: absolute
+                z-index: 2
+                top: 140px
+                right: -30px
+        &:nth-child(3)
+            .des__cloud
+                position: absolute
+                z-index: 2
+                top: 300px
+                left: -35px
+            &::before
+                content: ""
+                display: block
+                width: 1000px
+                height: 1000px
+                background: radial-gradient(50% 50.00% at 50% 50.00%, #A6EDF8 0%, rgba(157, 242, 255, 0.00) 100%)
+                position: absolute
+                top: -600px
+                left: -500px
+        &:nth-child(4)
+            .des__cloud
+                position: absolute
+                z-index: 2
+                top: 280px
+                right: -35px
+            &::before
+                content: ""
+                display: block
+                width: 1000px
+                height: 1000px
+                background: radial-gradient(50% 50.00% at 50% 50.00%, #A6EDF8 0%, rgba(157, 242, 255, 0.00) 100%)
+                position: absolute
+                right: -52px
+                top: -330px
+@media(max-width: 1199px)
+    .des__img
+        height: 500px
+@media(max-width: 991px)
+    .des__img
+        height: 400px
+@media(max-width: 767px)
+    .des
+        &__block
+            flex-direction: column-reverse
+            &:nth-child(2n)
+                flex-direction: column-reverse
+                .des__cont
+                    align-items: flex-start
+                    text-align: left
+        &__icon
+            position: static
+            margin-bottom: 20px
+        &__cont
+            width: 100%
+            margin-bottom: 30px
+        &__img
+            width: 100%
+            &::after
+                display: none
+@media(max-width: 575px)
+    .des
+        &__dec
+            width: 500px
+        &__wrap
+            padding-bottom: 20px
+        &-top__img
+            a
+                right: 15px
+        &__title
+            padding-left: 0
+            margin-bottom: 40px
+            span
+                display: block
+        &__cloud
+            display: none
+        &__block
+            margin-bottom: 60px
+            &:nth-child(1), &:nth-child(3), &:nth-child(4)
+                &::before
+                    display: none
+        &__img
+            height: 320px

@@ -1,0 +1,453 @@
+.serv
+    &__wrap
+        padding: 0 36px
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        grid-gap: 70px 0
+        justify-content: space-between
+        padding-bottom: 160px
+    &__dec
+        position: absolute
+        left: 0
+        top: 70px
+        font-weight: 300
+        font-size: 12px
+        line-height: 12px
+        color: #000000
+        transform-origin: 0% 0%
+        transform: rotate(-90deg)
+    &__cont
+        width: 560px
+        max-width: 48%
+        margin-top: 66px
+        padding-top: 52px
+        border-top: 1px solid #6FB5B3
+    &__top
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        width: 100%
+        .serv__img
+            width: 560px
+            max-width: 48%
+            margin-bottom: 0
+    &__block
+        width: 560px
+        max-width: 48%
+    &__img
+        display: block
+        margin-bottom: 29px
+        height: 490px
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            transition: all 0.5s
+    &__name
+        display: block
+        font-weight: 550
+        font-size: 18px
+        line-height: 30px
+        text-transform: uppercase
+        color: #000000
+        margin-bottom: 19px
+    &__descr
+        display: block
+        margin-bottom: 30px
+        font-weight: 300
+        font-size: 14px
+        line-height: 22px
+        color: #000000
+    &__link
+        padding-bottom: 13px
+        display: flex
+        align-items: center
+        grid-gap: 8px
+        font-weight: 550
+        font-size: 16px
+        line-height: 16px
+        color: #000000
+        text-decoration: none
+        transition: all 0.3s
+        path
+            transition: all 0.3s
+        &:hover
+            color: #6FB5B3
+            grid-gap: 15px
+            path
+                fill: #6FB5B3
+    &__block, &__top
+        text-decoration: none
+        &:hover
+            .serv__img img
+                transform: scale(1.2)
+.servin
+    &__wrap
+        padding-right: 36px
+        padding-left: 154px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        position: relative
+        padding-bottom: 140px
+    &__dec
+        position: absolute
+        left: 0
+        top: 315px
+        font-weight: 300
+        font-size: 12px
+        line-height: 12px
+        color: #000000
+        transform-origin: 0% 0%
+        transform: rotate(-90deg)
+    &__right
+        width: 570px
+        position: relative
+        img
+            height: 490px
+            width: 100%
+            object-fit: cover
+    &__text
+        width: 350px
+        padding-top: 100px
+        p
+            margin-top: 0
+            margin-bottom: 22px
+            font-weight: 300
+            font-size: 14px
+            line-height: 22px
+            color: #000000
+    &__pagination.swiper-pagination-bullets.swiper-pagination-horizontal
+        position: absolute
+        top: 50%
+        margin-top: -25px
+        right: -60px
+        bottom: auto
+        left: auto
+        width: 30px
+        grid-gap: 15px
+        display: flex
+        flex-direction: column
+        align-items: center
+        .swiper-pagination-bullet
+            width: 16px
+            height: 2px
+            border-radius: 0
+            transition: all 0.3s
+            background-color: #00B2A8
+            opacity: 1
+            &.swiper-pagination-bullet-active
+                width: 30px
+                background-color: #35404D
+.fstyle
+    &__wrap
+        padding: 0 36px
+        position: relative
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        position: relative
+        padding-bottom: 85px
+    &__dec
+        position: absolute
+        left: 0
+        top: 315px
+        font-weight: 300
+        font-size: 12px
+        line-height: 12px
+        color: #000000
+        transform-origin: 0% 0%
+        transform: rotate(-90deg)
+    &__cont
+        padding-top: 100px
+        width: 570px
+    &__quote
+        margin-left: 92px
+        padding-left: 24px
+        border-left: 2px solid #86CAC5
+        margin-bottom: 57px
+        font-size: 14px
+        line-height: 22px
+        max-width: 370px
+    &__subtitle
+        margin-bottom: 37px
+        font-weight: 700
+        font-size: 18px
+        line-height: 18px
+    &__list
+        margin: 0
+        padding: 0
+        list-style-type: none
+        li
+            font-weight: 300
+            font-size: 14px
+            line-height: 18px
+            color: #000000
+            margin-bottom: 18px
+            padding-left: 26px
+            position: relative
+            &::before
+                content: ""
+                display: block
+                width: 4px
+                height: 4px
+                background: #86CAC5
+                border-radius: 50%
+                position: absolute
+                top: 8px
+                left: 0
+    &-bot
+        padding: 0 36px
+        padding-bottom: 160px
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        grid-gap: 30px
+        &__left
+            width: 476px
+            .fstyle-bot__title
+                display: none
+        &__img
+            width: 384px
+            height: 580px
+            margin-bottom: 86px
+            margin-right: 0
+            margin-left: auto
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__right
+            width: 570px
+        &__text
+            padding-left: 118px
+            font-weight: 300
+            font-size: 14px
+            line-height: 22px
+            position: relative
+            &::before
+                content: ""
+                display: block
+                height: 1px
+                width: 96px
+                position: absolute
+                left: 0
+                top: 11px
+                background: #86CAC5
+        &__title
+            font-weight: 500
+            font-size: 18px
+            line-height: 30px
+            text-transform: uppercase
+            color: #000000
+            max-width: 400px
+            margin-bottom: 160px
+            span
+                color: #86CAC5
+        &__ex
+            text-decoration: none
+            border: 1px solid #6FB5B3
+            height: 270px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 0 56px
+            position: relative
+            overflow: hidden
+            &-text
+                font-weight: 300
+                font-size: 18px
+                line-height: 30px
+                text-transform: uppercase
+                max-width: 190px
+                color: #000000
+        &__arrow
+            position: absolute
+            top: 30px
+            right: 30px
+            transition: all 0.3s
+        &__bg
+            position: absolute
+            bottom: 0
+            left: 0
+            display: flex
+            z-index: -1
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                bottom: -300px
+                left: -250px
+                background: radial-gradient(50% 50% at 50% 50%, #A6EDF8 0%, rgba(157, 242, 255, 0) 100%)
+                width: 500px
+                height: 500px
+                z-index: -2
+        &__ex
+            &:hover
+                .fstyle-bot__arrow
+                    top: 20px
+                    right: 20px
+@media(max-width: 1199px)
+    .serv
+        &__img
+            height: 420px
+    .servin
+        &__right
+            width: 420px
+            img
+                height: 320px
+@media(max-width: 991px)
+    .fstyle
+        &__wrap
+            flex-direction: column
+            grid-gap: 28px
+        &__cont
+            padding-top: 0
+        &-bot
+            align-items: flex-start
+            flex-direction: column
+            &__img
+                margin-right: auto
+                margin-left: 0
+            &__title
+                margin-bottom: 50px
+            &__right
+                width: 100%
+                .fstyle-bot__title
+                    display: none
+            &__left
+                .fstyle-bot__title
+                    display: block
+    .serv
+        &__img
+            height: 320px
+        &__cont
+            margin-top: 0
+    .servin
+        &__wrap
+            padding-left: 110px
+            flex-direction: column-reverse
+            grid-gap: 70px
+        &__text
+            padding-top: 0
+        &__right
+            width: 100%
+        &__pagination.swiper-pagination-bullets.swiper-pagination-horizontal
+            bottom: -50px
+            top: auto
+            margin-top: 0
+            right: 0
+            width: 100%
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            grid-gap: 15px
+            height: 30px
+            .swiper-pagination-bullet
+                width: 2px
+                height: 12px
+                margin: 0
+                &.swiper-pagination-bullet-active
+                    width: 2px
+                    height: 30px
+@media(max-width: 767px)
+    .serv
+        &__top
+            flex-direction: column-reverse
+            .serv__img
+                max-width: 100%
+        &__cont
+            max-width: 100%
+            border-top: 0
+            padding-top: 26px
+        &__block
+            max-width: 100%
+        &__wrap
+            padding-bottom: 94px
+            grid-gap: 45px
+@media(max-width: 575px)
+    .fstyle
+        &__wrap
+            padding-right: 0
+            padding-left: 0
+        &__cont
+            padding-left: 25px
+            width: 100%
+        &__quote
+            margin-left: 25px
+            padding-left: 30px
+            padding-right: 20px
+            margin-bottom: 35px
+        &__subtitle, &__list
+            padding-left: 57px
+        &__dec
+            top: 105px
+        &-bot
+            padding: 0
+            padding-bottom: 95px
+            &__left, &__right
+                width: 100%
+            &__title
+                font-size: 14px
+                line-height: 22px
+                margin-bottom: 30px
+                br
+                    display: none
+            &__img
+                margin-bottom: 30px
+                width: 100%
+                height: auto
+            &__text
+                padding-left: 83px
+                &::before
+                    width: 70px
+            &__ex
+                height: 160px
+                padding: 0 32px
+                &-text
+                    font-weight: 550
+                    font-size: 14px
+                    line-height: 22px
+                    max-width: 155px
+            &__arrow
+                top: 20px
+                right: 20px
+            &__icon
+                width: 100px
+                img
+                    max-width: 100%
+    .serv
+        .team__title br
+            display: block
+        &__dec
+            top: 168px
+        &__wrap
+            padding-left: 25px
+            padding-right: 0
+        &__img
+            height: 290px
+            margin-bottom: 26px
+        &__name
+            margin-bottom: 21px
+            font-size: 18px
+            line-height: 25px
+        &__descr
+            font-size: 14px
+            line-height: 22px
+            margin-bottom: 28px
+    .servin
+        &__wrap
+            padding-right: 0
+            padding-left: 25px
+            padding-bottom: 65px
+            grid-gap: 0
+        &__text
+            width: 100%
+            margin-top: 70px
+        &__right
+            img
+                height: 295px
+        &__dec
+            width: 500px

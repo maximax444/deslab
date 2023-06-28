@@ -1,0 +1,383 @@
+.overlay
+    width: 100vw
+    height: calc(100vh - calc(100vh - 100%))
+    position: fixed
+    bottom: -350vw
+    left: 0
+    background-color: rgba(22, 27, 33, 0)
+    z-index: 11
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: background-color 0.3s
+    &-active
+        bottom: 0
+    &-start
+        background-color: rgba(22, 27, 33, 0.85)
+    &-gal
+        align-items: flex-start
+        overflow-y: scroll
+        padding: 40px 0
+        &__close
+            position: absolute
+            right: 29px
+            top: 30px
+            cursor: pointer
+            transition: all 0.3s
+            &:hover
+                transform: scale(1.2)
+        .popup
+            background: #161B21
+            width: 1280px
+            padding: 60px
+            position: relative
+            transition: all 0.5s ease-out
+            top: 300px
+            opacity: 0
+            max-width: 95vw
+            &.active
+                top: 0
+                opacity: 1
+        &__img
+            height: 616px
+            margin-bottom: 35px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__prev
+            position: absolute
+            top: 355px
+            left: 22px
+            cursor: pointer
+            transition: all 0.3s
+            &:hover
+                transform: scale(1.2)
+        &__next
+            position: absolute
+            top: 355px
+            right: 22px
+            cursor: pointer
+            transition: all 0.3s
+            &:hover
+                transform: scale(1.2)
+        &__cont
+            display: flex
+            justify-content: space-between
+            grid-gap: 20px
+            background: #161B21
+        &__left
+            width: 520px
+        &__list
+            width: 540px
+            border-top: 1px solid #D9D9D9
+            padding-top: 29px
+            display: flex
+            justify-content: space-between
+        &__el
+            width: 30%
+            font-weight: 300
+            font-size: 14px
+            line-height: 22px
+            color: #FFFFFF
+            span
+                display: block
+                margin-bottom: 18px
+                font-weight: 550
+                font-size: 16px
+                line-height: 16px
+        &__name
+            font-weight: 550
+            font-size: 18px
+            line-height: 30px
+            text-transform: uppercase
+            color: #FFFFFF
+            margin-bottom: 19px
+        &__descr
+            font-weight: 300
+            font-size: 14px
+            line-height: 22px
+            color: #FFFFFF
+    &-call
+        .popup
+            width: 972px
+            max-width: 95%
+            background: #FFFFFF
+            padding: 30px 126px
+            padding-bottom: 69px
+            position: relative
+            top: 300px
+            opacity: 0
+            overflow: hidden
+            transition: all 0.5s ease-out
+            &::after
+                content: ""
+                width: 835px
+                height: 835px
+                display: block
+                background: radial-gradient(50% 50% at 50% 50%, rgba(166, 237, 248, 0.6) 0%, rgba(157, 242, 255, 0) 100%)
+                top: -415px
+                right: -415px
+                z-index: 0
+                position: absolute
+            &::before
+                content: ""
+                display: block
+                width: 500px
+                height: 500px
+                background: url('../img/popup.svg') top right no-repeat
+                position: absolute
+                top: 0
+                right: 0
+                z-index: 1
+                transition: all 0.5s
+            &.active
+                top: 0
+                opacity: 1
+            &:hover
+                &::before
+                    transform: rotate(360deg)
+        &__close
+            width: 32px
+            height: 32px
+            display: flex
+            align-items: center
+            justify-content: center
+            margin: 0 auto
+            cursor: pointer
+            margin-bottom: 54px
+            transition: all 0.3s
+            position: relative
+            z-index: 3
+            &:hover
+                transform: scale(1.2)
+        &__title
+            font-weight: 550
+            font-size: 32px
+            line-height: 30px
+            text-transform: uppercase
+            color: #000000
+            text-align: center
+            margin-bottom: 70px
+            position: relative
+            z-index: 3
+        &__form
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 32px 72px
+            position: relative
+            z-index: 3
+            input
+                width: 100%
+                display: block
+                padding: 22px 0
+                border: 0
+                background: transparent
+                font-weight: 300
+                font-size: 16px
+                line-height: 16px
+                color: #000000
+                border-bottom: 1px solid #6FB5B3
+            ::placeholder
+                color: inherit
+            textarea
+                grid-column: 1/3
+                height: 62px
+                width: 100%
+                background: transparent
+                padding: 22px 0
+                border: 0
+                font-weight: 300
+                font-size: 16px
+                line-height: 16px
+                color: #000
+                border-bottom: 1px solid #6FB5B3
+                resize: none
+            button
+                display: flex
+                align-items: center
+                justify-content: center
+                cursor: pointer
+                background-color: transparent
+                grid-gap: 6px
+                width: 230px
+                padding: 18px 5px
+                border: 1px solid #6FB5B3
+                border-radius: 32px
+                font-size: 14px
+                line-height: 14px
+                text-decoration: none
+                color: #000000
+                overflow: hidden
+                position: relative
+                &-dop
+                    width: 38px
+                    height: 38px
+                    display: block
+                    border-radius: 50%
+                    background: #6FB5B3
+                    position: absolute
+                    left: -13px
+                    top: 50%
+                    margin-top: -19px
+                    overflow: hidden
+                    transition: all 1s
+                    z-index: 2
+                    span
+                        width: 230px
+                        height: 50px
+                        margin-top: -25px
+                        position: absolute
+                        top: 50%
+                        left: 12px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        grid-gap: 6px
+                        color: #fff
+                        font-size: 14px
+                        line-height: 14px
+                    path
+                        fill: #fff
+                &:hover
+                    .footer__btn-dop
+                        width: 300px
+                        height: 300px
+                        margin-top: -150px
+        &__bot
+            grid-column: 1/3
+            display: flex
+            align-items: center
+            justify-content: space-between
+            grid-gap: 15px
+        &__check
+            position: relative
+            display: flex
+            align-items: center
+            grid-gap: 12px
+            p
+                margin: 0
+                font-weight: 300
+                font-size: 14px
+                line-height: 22px
+                color: #6FB5B3
+                a
+                    color: #6FB5B3
+                    text-decoration: none
+                    border-bottom: 1px solid #6FB5B3
+                    &:hover
+                        border-bottom: 1px solid transparent
+            input
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+                opacity: 0
+                width: 0
+                height: 0
+                overflow: hidden
+                visibility: hidden
+                &+span
+                    width: 14px
+                    height: 14px
+                    display: block
+                    background: url('../img/check.svg') center no-repeat
+                    opacity: 0
+                    transition: all 0.3s
+                &:checked + span
+                    opacity: 1
+@media(max-width: 991px)
+    .overlay
+        &-call
+            &__check
+                max-width: 50%
+        &-gal
+            &__img
+                height: 420px
+            &__prev, &__next
+                top: 260px
+@media(max-width: 767px)
+    .overlay
+        &-gal
+            &__cont
+                flex-direction: column
+                grid-gap: 27px
+            &__left, &__list
+                width: 100%
+        &-call
+            align-items: flex-start
+            padding: 50px 0
+            overflow-y: scroll
+            .popup
+                padding: 50px 25px
+                padding-bottom: 70px
+@media(max-width: 575px)
+    .overlay
+        &-gal
+            padding: 75px 0
+            .popup
+                padding: 40px 25px
+            &__img
+                height: 240px
+                margin-bottom: 80px
+            &__prev
+                top: 300px
+                left: 25px
+                z-index: 5
+                &:hover
+                    transform: none
+            &__next
+                top: 300px
+                left: 80px
+                z-index: 5
+                &:hover
+                    transform: none
+            &__list
+                grid-gap: 28px
+                flex-direction: column
+            &__el
+                width: 100%
+            &__close
+                right: 11px
+                top: 11px
+                width: 14px
+                height: 14px
+                svg
+                    max-width: 100%
+        &-call
+            &__close
+                position: absolute
+                top: 8px
+                right: 8px
+            &__title
+                text-align: left
+                font-size: 21px
+                line-height: 27px
+                margin-bottom: 20px
+            &__form
+                grid-gap: 20px
+                grid-template-columns: repeat(1, 1fr)
+                textarea
+                    grid-column: 1/2
+            &__bot
+                grid-column: 1/2
+                flex-direction: column
+                align-items: flex-start
+                grid-gap: 30px
+                padding-top: 7px
+            &__check
+                max-width: 100%
+                align-items: flex-start
+                span
+                    margin-top: 4px
+            .popup
+                &::after
+                    width: 700px
+                    height: 700px
+                    right: -310px
+                    bottom: -480px
+                    top: auto
+                &::before
+                    top: auto
+                    bottom: -250px
+                    right: -200px

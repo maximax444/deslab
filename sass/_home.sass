@@ -1,0 +1,935 @@
+.home
+    &-about
+        padding-top: 95px
+        padding-bottom: 90px
+        &__wrap
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            position: relative
+        &__cloud
+            position: absolute
+            &1
+                left: 0
+                bottom: -40px
+            &2
+                left: 200px
+                bottom: -230px
+            &3
+                bottom: 80px
+                left: 390px
+            &4
+                left: 480px
+                top: 26px
+            &5
+                right: 0
+                top: 305px
+        &__left
+            width: 550px
+            position: relative
+        &__right
+            width: 640px
+            position: relative
+        &__img
+            height: 415px
+            margin-bottom: 57px
+            position: relative
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__text
+            margin-bottom: 32px
+            p
+                color: #000
+                font-size: 14px
+                margin-top: 0
+                margin-bottom: 22px
+                font-weight: 300
+                line-height: 22px
+        &__team
+            color: #000
+            text-align: right
+            font-size: 16px
+            font-weight: 550
+            text-decoration: none
+            display: flex
+            align-items: center
+            grid-gap: 8px
+            position: absolute
+            right: -36px
+            bottom: 133px
+            transform: rotate(-90deg)
+            transform-origin: bottom right
+            path
+                transition: all 0.3s
+            &:hover
+                color: #6FB5B3
+                grid-gap: 15px
+                path
+                    fill: #6FB5B3
+        &__portf
+            color: #000
+            text-align: right
+            font-size: 16px
+            font-weight: 550
+            text-decoration: none
+            display: flex
+            align-items: center
+            grid-gap: 8px
+            path
+                transition: all 0.3s
+            &:hover
+                color: #6FB5B3
+                grid-gap: 15px
+                path
+                    fill: #6FB5B3
+        &__title
+            color: #13181E
+            font-size: 32px
+            font-weight: 700
+            line-height: 38px
+            text-transform: uppercase
+            padding-left: 154px
+            margin-bottom: 51px
+            margin-top: 0
+        &__subtitle
+            margin-top: 0
+            margin-bottom: 25px
+            color: #000
+            font-size: 14px
+            font-weight: 550
+            line-height: 22px
+            padding-left: 154px
+            text-transform: uppercase
+            position: relative
+            &::before
+                content: ""
+                display: block
+                width: 96px
+                height: 1px
+                background: #86CAC5
+                left: 36px
+                top: 10px
+                position: absolute
+        &__descr
+            padding-left: 36px
+            margin-bottom: 33px
+            margin-top: 0
+            color: #000
+            font-size: 14px
+            font-weight: 300
+            line-height: 22px
+        &__smi
+            padding-left: 36px
+            color: #000
+            text-align: right
+            font-size: 16px
+            font-weight: 550
+            text-decoration: none
+            display: flex
+            align-items: center
+            grid-gap: 8px
+            path
+                transition: all 0.3s
+            &:hover
+                color: #6FB5B3
+                grid-gap: 15px
+                path
+                    fill: #6FB5B3
+        &__dec
+            color: #000
+            text-align: right
+            font-size: 12px
+            font-weight: 300
+            position: absolute
+            transform: rotate(-90deg)
+            position: absolute
+            bottom: 0
+            left: 12px
+            transform-origin: bottom left
+    &-feat
+        padding-top: 80px
+        padding-bottom: 70px
+        position: relative
+        &::before
+            content: ""
+            display: block
+            width: 800px
+            height: 800px
+            background: radial-gradient(50% 50.00% at 50% 50.00%, #B1F2EF 0%, rgba(182, 245, 255, 0.00) 100%)
+            position: absolute
+            top: -270px
+            right: -370px
+            z-index: -1
+        &::after
+            content: ""
+            display: block
+            width: 700px
+            height: 700px
+            background: radial-gradient(50% 50.00% at 50% 50.00%, #B1F2EF 0%, rgba(182, 245, 255, 0.00) 100%)
+            position: absolute
+            top: 600px
+            right: -100px
+            z-index: -1
+        &__cloud
+            display: none
+        &__title
+            margin-top: 0
+            margin-bottom: 38px
+            color: #13181E
+            font-size: 32px
+            font-weight: 700
+            line-height: 34px
+            text-transform: uppercase
+        &__wrap
+            display: flex
+            justify-content: space-between
+        &__block
+            height: 310px
+            border: 1px solid #6FB5B3
+            cursor: pointer
+            &-wrap
+                width: 410px
+                max-width: 33%
+                overflow: hidden
+                position: relative
+        &__arrow
+            width: 200px
+            height: 200px
+            background: #00B2A8
+            border-radius: 50%
+            position: absolute
+            bottom: -100px
+            right: -100px
+            padding-bottom: 130px
+            padding-right: 130px
+            display: flex
+            align-items: flex-end
+            justify-content: flex-end
+            z-index: 2
+            transition: all 1s
+            transition-delay: 0.6s
+        &__name
+            color: #000
+            font-size: 18px
+            padding: 53px
+            font-weight: 550
+            line-height: 30px
+            text-transform: uppercase
+        &__dop
+            background: linear-gradient(211deg, #616A74 0%, #A3A8B7 100%)
+            position: absolute
+            bottom: -100%
+            left: 0%
+            padding: 53px
+            height: 100%
+            width: 100%
+            overflow: hidden
+            z-index: 3
+            border-radius: 0
+            transition: all 1s
+            transition-delay: 0s
+        &__icon
+            position: absolute
+            bottom: -3px
+            right: 20px
+        &__descr
+            margin: 0
+            color: #FFF
+            font-size: 14px
+            font-weight: 300
+            line-height: 22px
+        &__block:hover
+            .home-feat
+                &__arrow
+                    width: 600px
+                    height: 600px
+                    transition-delay: 0s
+                &__dop
+                    border-radius: 0
+                    bottom: 0
+                    left: 0
+                    transition-delay: 0.6s
+    &-portf
+        padding: 65px 0
+        overflow: hidden
+        &__top
+            padding-left: 118px
+            color: #000
+            font-size: 14px
+            line-height: 17px
+            position: relative
+            margin: 0
+            margin-bottom: 50px
+            font-weight: 300
+            &::before
+                content: ""
+                display: block
+                width: 96px
+                height: 1px
+                background: #86CAC5
+                position: absolute
+                top: 8px
+                left: 0
+        &__wrap
+            display: flex
+            justify-content: space-between
+        &__right
+            width: 640px
+            position: relative
+            img
+                height: 480px
+                width: 100%
+                object-fit: cover
+        &__left
+            width: 570px
+        &__title
+            margin: 0
+            margin-bottom: 50px
+            color: #13181E
+            font-size: 32px
+            font-weight: 700
+            line-height: 34px
+            text-transform: uppercase
+        &__quote
+            margin-left: 88px
+            border-left: 2px solid #86CAC5
+            padding: 15px 22px
+            padding-right: 120px
+            color: #000
+            font-size: 14px
+            font-weight: 550
+            line-height: 22px
+            text-transform: uppercase
+            margin-bottom: 22px
+        &__text
+            margin-top: 0
+            margin-bottom: 33px
+            color: #000
+            font-size: 14px
+            font-weight: 300
+            line-height: 22px
+        &__link
+            color: #000
+            text-align: right
+            font-size: 16px
+            font-weight: 550
+            text-decoration: none
+            display: flex
+            align-items: center
+            grid-gap: 8px
+            path
+                transition: all 0.3s
+            &:hover
+                color: #6FB5B3
+                grid-gap: 15px
+                path
+                    fill: #6FB5B3
+        &__pagination.swiper-pagination-bullets.swiper-pagination-horizontal
+            position: absolute
+            top: 50%
+            margin-top: -18px
+            right: -50px
+            bottom: auto
+            left: auto
+            width: 30px
+            grid-gap: 15px
+            display: flex
+            flex-direction: column
+            align-items: center
+            .swiper-pagination-bullet
+                width: 16px
+                height: 2px
+                border-radius: 0
+                transition: all 0.3s
+                background-color: #00B2A8
+                opacity: 1
+                &.swiper-pagination-bullet-active
+                    width: 30px
+                    background-color: #35404D
+    &-rev
+        padding-top: 60px
+        padding-bottom: 70px
+        &__top
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+            margin-bottom: 36px
+        &__arrows
+            display: flex
+            align-items: center
+            grid-gap: 33px
+            padding-bottom: 14px
+        &__title
+            margin: 0
+            color: #13181E
+            font-size: 32px
+            font-weight: 700
+            line-height: 38px
+            text-transform: uppercase
+        &__prev, &__next
+            cursor: pointer
+            user-select: none
+            path
+                transition: all 0.3s
+            &:hover
+                path
+                    fill: #00B2A8
+        &__block
+            background: linear-gradient(211deg, #7AA6B9 0%, #EAEBED 100%)
+            height: 420px
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+            &:focus
+                outline: none
+            &.v2
+                background: linear-gradient(211deg, #6FC3BF 0%, #DCDCDC 100%)
+            &.v3
+                background: linear-gradient(211deg, #40B1AB 0%, #EAEBED 100%)
+            &.v4
+                background: linear-gradient(211deg, #02C6BB 0%, #EAEDF3 100%)
+            &::after
+                content: ""
+                display: block
+                width: 100%
+                height: 100%
+                background: url('../img/home-rev-bg.svg') center no-repeat
+                position: absolute
+                top: 0
+                left: 0
+            &>img
+                max-width: 100%
+                max-height: 100%
+                position: relative
+                z-index: 3
+        &__dop
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: rgba(19, 24, 30, 0.05)
+            box-shadow: 0px 80px 65px 0px rgba(53, 64, 77, 0.30) inset, 0px 1px 40px 0px rgba(163, 168, 183, 0.20) inset, 0px 4px 16px 0px rgba(0, 178, 168, 0.10) inset
+            backdrop-filter: blur(20px)
+            display: flex
+            flex-direction: column
+            inset-block-start:
+            justify-content: flex-end
+            padding: 30px 50px
+            opacity: 0
+            z-index: 4
+            transition: all 0.5s
+        &__descr
+            color: #FFF
+            text-align: center
+            font-size: 12px
+            line-height: 18px
+            transform: translateY(50px)
+            opacity: 0
+            transition: all 0.8s
+        &__name
+            color: #FFF
+            font-size: 14px
+            text-align: center
+            margin-bottom: 20px
+            position: relative
+            font-weight: 500
+            line-height: 22px
+            text-transform: uppercase
+            transform: translateY(50px)
+            opacity: 0
+            transition: all 0.8s
+            &::after
+                content: ""
+                display: block
+                width: 26px
+                height: 1px
+                position: absolute
+                bottom: -10px
+                left: 50%
+                margin-left: -13px
+                background-color: #fff
+        &__icon
+            width: 44px
+            height: 44px
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top: 50%
+            left: 50%
+            margin-left: -22px
+            margin-top: -22px
+        &__block:hover
+            .home-rev
+                &__name, &__descr
+                    opacity: 1
+                    transform: translateY(0)
+                &__descr
+                    transition-delay: 0.3s
+                &__dop
+                    opacity: 1
+    &-proj
+        padding-top: 70px
+        padding-bottom: 65px
+        overflow: hidden
+        &__title
+            color: #13181E
+            font-size: 32px
+            font-weight: 700
+            line-height: 38px
+            text-transform: uppercase
+            margin-bottom: 50px
+            margin-top: 0
+            max-width: 375px
+        &__block
+            height: 220px
+            padding-bottom: 50px
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 28px
+            position: relative
+            &>img
+                filter: grayscale(1)
+                transition: all 0.3s
+                opacity: 0.5
+                max-width: 100%
+                max-height: 100%
+        &__name
+            width: 100%
+            position: absolute
+            bottom: 10px
+            text-align: center
+            color: #000
+            text-align: center
+            font-size: 12px
+            font-weight: 300
+            line-height: 16px
+            text-decoration-line: underline
+            opacity: 0
+            transition: all 0.3s
+        &__bottom
+            padding-top: 50px
+            display: flex
+            justify-content: space-between
+        &__block:hover
+            .home-proj__name
+                opacity: 1
+            &>img
+                opacity: 1
+                filter: grayscale(0)
+        &__line
+            background: #6FB5B3
+            height: 1px
+            .swiper-scrollbar-drag
+                height: 2px
+                background: #6FB5B3
+                top: -1px
+        &__link
+            padding-left: 36px
+            color: #000
+            text-align: right
+            font-size: 16px
+            font-weight: 550
+            text-decoration: none
+            display: flex
+            align-items: center
+            grid-gap: 8px
+            path
+                transition: all 0.3s
+            &:hover
+                color: #6FB5B3
+                grid-gap: 15px
+                path
+                    fill: #6FB5B3
+    &-blog
+        padding-top: 65px
+        padding-bottom: 155px
+        &__title
+            margin: 0
+            margin-bottom: 37px
+            color: #13181E
+            font-size: 32px
+            font-weight: 700
+            line-height: 38px
+            text-transform: uppercase
+            max-width: 275px
+        &__block
+            display: flex
+            align-items: center
+            text-decoration: none
+            &::after
+                width: 0
+                height: 0
+                display: block
+                content: ""
+                border-radius: 50% 50% 0 50%
+                background: #EAEBED url('../img/blog-bg.svg') bottom right no-repeat
+                position: absolute
+                bottom: -20px
+                transition: all 1s
+                right: -20px
+        &__img
+            width: 50%
+            height: 320px
+            position: relative
+            z-index: 2
+            overflow: hidden
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                object-position: left bottom
+                transition: all 1s
+            &:hover
+                img
+                    transform: scale(1.2)
+        &__cont
+            width: 50%
+            padding: 40px
+        &__name
+            margin-bottom: 29px
+            color: #000
+            font-size: 18px
+            font-weight: 550
+            line-height: 30px
+            text-transform: uppercase
+            transition: all 0.3s
+            position: relative
+            z-index: 3
+            &:hover
+                color: #6FB5B3
+        &__descr
+            color: #000
+            font-size: 14px
+            font-weight: 300
+            line-height: 22px
+            height: 0
+            position: relative
+            z-index: 3
+            overflow: hidden
+            transition: all 0.5s
+        &__link
+            color: #000
+            text-align: right
+            font-size: 16px
+            position: relative
+            z-index: 3
+            font-weight: 550
+            text-decoration: none
+            display: flex
+            align-items: center
+            grid-gap: 8px
+            text-decoration: none
+            transition: all 0.3s
+            path
+                transition: all 0.3s
+            &:hover
+                color: #6FB5B3
+                grid-gap: 15px
+                path
+                    fill: #6fb5b3
+@media(min-width: 992px)
+    .home-blog
+        &__block:hover
+            &::after
+                width: 500px
+                height: 500px
+            .home-blog__descr
+                height: 66px
+                margin-bottom: 30px
+@media(max-width: 1379px)
+    .home
+        &-about
+            &__cloud5
+                right: 30px
+            &__team
+                right: -20px
+        &-portf
+            &__pagination.swiper-pagination-bullets.swiper-pagination-horizontal
+                right: -20px
+@media(max-width: 1329px)
+    .home
+        &-about
+            &__right
+                width: 550px
+            &__img
+                margin-bottom: 25px
+        &-portf
+            &__right
+                width: 550px
+@media(max-width: 1199px)
+    .home
+        &-about
+            padding-bottom: 40px
+            &__title
+                padding-left: 100px
+            &__subtitle
+                padding-left: 100px
+                &::before
+                    width: 50px
+            &__left
+                width: 480px
+            &__right
+                width: 490px
+            &__team
+                position: static
+                display: block
+                transform: none
+                padding: 20px 0
+                height: auto
+                text-align: left
+            &__img
+                height: auto
+        &-feat
+            &__name
+                padding: 40px
+            &__dop
+                padding: 40px
+        &-portf
+            &__left
+                width: 480px
+            &__right
+                width: 490px
+@media(max-width: 991px)
+    .home
+        &-about
+            overflow: hidden
+            &__wrap
+                flex-direction: column
+                grid-gap: 40px
+            &__cloud2
+                display: none
+        &-feat
+            &__dop, &__name
+                padding: 25px
+        &-portf
+            &__wrap
+                flex-direction: column
+                grid-gap: 30px
+            &__right
+                width: 100%
+            &__pagination.swiper-pagination-bullets.swiper-pagination-horizontal
+                bottom: -50px
+                top: auto
+                margin-top: 0
+                right: 0
+                width: 100%
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                grid-gap: 15px
+                height: 30px
+                .swiper-pagination-bullet
+                    width: 2px
+                    height: 12px
+                    margin: 0
+                    &.swiper-pagination-bullet-active
+                        width: 2px
+                        height: 30px
+        &-rev
+            &__dop
+                padding: 30px
+@media(max-width: 767px)
+    .home
+        &-feat
+            &__dop, &__name
+                padding: 40px
+            &__wrap
+                flex-wrap: wrap
+                grid-gap: 20px
+            &__block-wrap
+                width: 100%
+                max-width: 100%
+            &__dop
+                bottom: 0
+@media(max-width: 575px)
+    .home
+        &-blog
+            padding-top: 0
+            padding-bottom: 115px
+            &__title
+                font-size: 21px
+                line-height: 27px
+                margin-bottom: 36px
+                max-width: 175px
+            &__block
+                display: block
+            &__img
+                height: 300px
+                width: 100%
+            &__descr
+                height: auto
+                margin-bottom: 30px
+            &__cont
+                width: 100%
+                padding: 30px 0
+                border-bottom: 1px solid #6FB5B3
+        &-proj
+            padding-top: 60px
+            padding-bottom: 65px
+            &__bottom
+                padding-top: 30px
+            &__title
+                font-size: 21px
+                line-height: 27px
+                margin-bottom: 36px
+                padding-right: 80px
+            &__name
+                opacity: 1
+            &__block
+                height: 200px
+                padding-bottom: 40px
+                &> img
+                    opacity: 1
+                    filter: grayscale(0)
+        &-rev
+            padding-top: 55px
+            padding-bottom: 65px
+            position: relative
+            &__arrows
+                padding-bottom: 0
+            &__prev, &__next
+                display: flex
+            &__dop
+                display: none
+            &__block
+                height: 230px
+                &::after
+                    background-size: contain
+            &__title
+                font-size: 21px
+                line-height: 27px
+                margin-bottom: 36px
+            &__top
+                margin-bottom: 0
+            .home-rev__arrows
+                position: absolute
+                left: 15px
+                bottom: 10px
+        &-portf
+            padding-top: 0
+            &__left
+                width: 100%
+            &__top
+                margin-bottom: 30px
+                padding-left: 85px
+                &::before
+                    width: 70px
+            &__title
+                font-size: 21px
+                line-height: 27px
+                margin-bottom: 35px
+            &__quote
+                margin-left: 50px
+                padding-left: 30px
+                padding-right: 0
+                margin-bottom: 28px
+            &__right
+                img
+                    height: 250px
+        &-feat
+            padding-top: 5px
+            position: relative
+            padding-bottom: 70px
+            &::before, &::after
+                display: none
+            &__cloud
+                display: block
+                position: absolute
+                top: -95px
+                left: 84px
+                width: 265px
+                z-index: -1
+                img
+                    max-width: 100%
+            &__title
+                margin-bottom: 35px
+                font-size: 21px
+                line-height: 27px
+            &__dop, &__name
+                padding: 29px 25px
+                padding-right: 74px
+            &__block
+                height: 202px
+            &__icon
+                width: 100px
+                right: 10px
+                img
+                    max-width: 100%
+        &-about
+            padding: 65px 0
+            &__cloud
+                &1
+                    left: -100px
+                    bottom: -70px
+                    width: 200px
+                    img
+                        max-width: 100%
+                &3
+                    bottom: 30px
+                    left: auto
+                    right: -85px
+                    width: 170px
+                    img
+                        max-width: 100%
+                &4
+                    top: 310px
+                    left: auto
+                    right: -23px
+                    width: 154px
+                    img
+                        max-width: 100%
+                &5
+                    display: none
+            &__left
+                width: 100%
+            &__title
+                padding-left: 85px
+                font-size: 21px
+                line-height: 27px
+                margin-bottom: 32px
+            &__subtitle
+                padding-left: 85px
+                margin-bottom: 24px
+                font-size: 14px
+                line-height: 22px
+                &::before
+                    width: 45px
+                    left: 25px
+            &__descr
+                padding-left: 25px
+            &__dec
+                bottom: 45px
+            &__smi
+                padding-left: 25px
+            &__right
+                width: 100%
+            &__img
+                margin-left: -15px
+                margin-right: -15px
+                img
+                    width: 100%
+                    height: 280px
+            &__team
+                padding-top: 27px
+                padding-bottom: 35px
+                padding-left: 40px
+                position: relative
+                bottom: 0
+                right: 0
+                &::after
+                    content: ""
+                    display: block
+                    width: calc(100% - 30px)
+                    left: 15px
+                    bottom: 0
+                    position: absolute
+                    height: 1px
+                    background: #6FB5B3
+            &__text, &__portf
+                padding-left: 25px
